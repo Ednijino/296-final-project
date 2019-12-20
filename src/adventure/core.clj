@@ -12,6 +12,7 @@
                           :title "by the gaming floor entrance"
                           :dir {
       		                      :down :lobby
+                                :up :escape-floor
       		                        :east :pc-room
       		                          :west :ps4-room
                                 }
@@ -22,7 +23,7 @@
         :title "in the escape floor"
         :dir {
 		          :up :pool-floor
-
+              :down :video-games-floor
 		          :south :escape-game-room
             }
         :contents #{}}
