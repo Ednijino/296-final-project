@@ -230,4 +230,4 @@
           command (read-line)]
       (if (= (get-in pl [:adventurer :hp]) 0)
       (quit pl)
-      (recur (respond pl (canonicalize command)))))))
+      (recur (respond (update-in pl [:adventurer :tick] #(inc %)) (canonicalize command)))))))
