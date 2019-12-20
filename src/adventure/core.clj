@@ -63,7 +63,7 @@
 	                         :up :escape-floor
 	                          :down :lobby
 	                         }
-                :contents #{}}
+                :contents #{:teddybear}}
       :escape-game-room {
                 :desc-- "You successfully escaped and win the prizes!"
                 :title "In the escape game room"
@@ -83,7 +83,7 @@
                     	    :up :rooftop
                     	   :down :movie-floor
                     	}
-                    :contents #{:teddybear}}
+                    :contents #{}}
       :rooftop {
              :desc "You arrive at the rooftop of this hotel, there is a door that shows ‘exit’, and another door that says lobby"
              :title "at the rooftop"
@@ -213,7 +213,7 @@
   "Given an input string, strip out whitespaces, lowercase all words, and convert to a vector of keywords."
   [input]
   (mapv keyword (str/split input #"[.,?! ]+")))
-(def intro "You are in fornt of a big building and have 10 tickets, going into any room will consume a ticket. You will be kicked off when out of tikets. Arrive the rooftop considering win! ")
+(def intro "You are in fornt of a big building and have 10 tickets, going into any room will consume a ticket. You will be kicked off when out of tikets. Arrive the rooftop with teddybear considering win! ")
 (defn -main
   "Initialize the adventure"
   [& args]
